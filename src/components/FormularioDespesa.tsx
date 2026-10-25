@@ -31,7 +31,7 @@ export function FormularioDespesa({ onAdicionar }: Props): JSX.Element {
     if (valor.trim() === "") {
       novosErros.valor = "E gastou quanto irmão? Anota ai";
     } else if(Number.isNaN(valorNumerico) || valorNumerico <= 0) {
-      novosErros.valor = "Informe um valor maior que zero.";
+      novosErros.valor = "Colou valor mais negativo... é despesa não receita boy.";
     }
     if (categoria === null) {
       novosErros.categoria = "Escolha uma categoria.";
